@@ -2,3 +2,25 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --main-fsize: 1.125rem;
+  --main-ffamily: "IBM Plex Mono", sans-serif;
+  --text-color: #f1b2ce;
+  --title-weight: 700;
+  --main-title-color: rgb(219, 0, 255);
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
+  --title-color: #000028;
+  --dec-clr: rgb(255, 0, 112);
+  --main-lheight: 130%;
+  --accent-color: rgb(255, 0, 112);
+  --theme-rotate-accent-color: #ff0070;
+  --theme-rotate-hover-color: #ff007066;
+  --main-gap: 40px;
+  --usualy-spacing: 20px;
+  --border-color: rgb(255, 0, 112);
+  --size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --shadow-title: #ff0070;
+  --link-color: #f1b2ce;
+}
