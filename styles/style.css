@@ -259,15 +259,11 @@
   margin-block-start: 7.85vh;
 }
 
-.focus-title {
-  text-align: center;
-}
-
 /* ссылки стили */
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px var(--shadow-title);
+  text-shadow: 2px 2px var(--shadow-title-media);
 }
 
 .link:hover {
@@ -410,7 +406,7 @@
   }
 
   .focus-title-under {
-    text-shadow: 2px 2px 0 var(--shadow-title);
+    text-shadow: 2px 2px 0 var(--shadow-title-media);
     padding-block-start: 8.2vh;
   }
 }
