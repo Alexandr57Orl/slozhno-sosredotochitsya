@@ -16,6 +16,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  height: max(100vh, 768px);
   padding: var(--usualy-spacing) var(--usualy-spacing) 17.4479vh 0;
   margin-block-end: 3.9vh;
 }
