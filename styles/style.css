@@ -18,7 +18,7 @@
   flex-direction: column;
   height: max(100vh, 768px);
   padding: var(--usualy-spacing) var(--usualy-spacing) 17.4479vh 0;
-  margin-block-end: 3.9vh;
+  margin-block-end: 5vh;
 }
 
 /* реализуем контент с кнопками */
@@ -287,7 +287,7 @@
 
 @media (width<=769px) {
   .header {
-    margin-block-end: 3.5vh;
+    margin-block-end: 3.8vh;
   }
 
   .header__theme-menu {
