@@ -49,15 +49,16 @@
   cursor: pointer;
 }
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--theme-rotate-accent-color);
+  border-bottom: 1px solid var(--theme-rotate-hover-color);
   outline: none;
 }
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--theme-rotate-accent-color);
+  outline: 1px solid var(--theme-rotate-hover-color);
 }
 /* Стили для главного Заголовка */
 .title {
+  text-shadow: 4px 4px var(--shadow-title);
   color: var(--main-title-color);
   font-size: var(--size-desktop);
   font-weight: 700;
@@ -65,7 +66,6 @@
 }
 
 .header__title {
-  text-shadow: 4px 4px var(--shadow-title);
   text-align: left;
   margin: 1.745em 0 15vh 0;
 }
@@ -157,6 +157,7 @@
   line-height: var(--main-lheight);
   max-width: 30.76vw;
   margin-block-end: 1.25rem;
+  grid-column: 1;
 }
 .checkpoint-article-text {
   color: var(--text-color);
@@ -173,6 +174,8 @@
 
 .checkpoint-article {
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 /* вторая секция */
@@ -181,9 +184,9 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: var(--usualy-spacing);
 }
-.second-title {
+/* .second-title {
   grid-column: 1;
-}
+} */
 
 .checkpoint-article-midle {
   grid-row: 2;
@@ -197,10 +200,10 @@
   gap: 10px;
 }
 
-.checkpoint-article {
+/* .checkpoint-article {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .checkpoint-article-different:not(:last-child) {
   margin-block-end: 10px;
@@ -378,10 +381,11 @@
     gap: 10px;
   }
   .footer {
+    margin-block-start: 42px;
     height: max(100vh, 668px);
   }
   .focus-title-under {
     text-shadow: 2px 2px 0 var(--shadow-title);
-    padding-block-start: 50px;
+    padding-block-start: 42px;
   }
 }

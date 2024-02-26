@@ -18,4 +18,9 @@
   --border-color: rgb(255, 0, 112);
   --shadow-title: #ff0070;
   --link-color: #f1b2ce;
+  --dec-clr: #ff0070;
+
+  .rec__type-icon {
+    display: flex;
+  }
 }

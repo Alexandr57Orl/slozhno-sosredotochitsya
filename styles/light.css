@@ -14,8 +14,26 @@
   --main-title-color: #ffc2e6;
   --text-color: #353430;
   --accent-color: #353430;
+  --theme-rotate-hover-color: #353430;
   --dec-clr: #ff8dcb;
+  --link-color: #353430;
+  .rec__type-icon {
+    display: none;
+  }
+}
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --shadow-title: rgba(255, 141, 203, 1);
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --main-title-color: #ffc2e6;
+    --text-color: #353430;
+    --accent-color: #353430;
+    --theme-rotate-hover-color: #353430;
+    --dec-clr: #ff8dcb;
+    --link-color: #353430;
+  }
   .rec__type-icon {
     display: none;
   }
