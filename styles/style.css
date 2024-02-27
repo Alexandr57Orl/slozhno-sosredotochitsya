@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  color: var(--text-color);
+  color: var(--text-color, #353430);
   font-family: var(--main-ffamily), sans-serif;
   font-size: var(--main-fsize);
   line-height: var(--main-lheight);
@@ -30,7 +30,7 @@
 
 .header__theme-menu-list {
   display: flex;
-  gap: 11px;
+  gap: 8px;
   justify-content: space-between;
 }
 
@@ -42,11 +42,12 @@
 }
 
 .header__theme-menu-button {
+  position: relative;
   background: transparent;
   border: none;
-  /* outline: 1px solid transparent; */
   height: 26px;
   padding: 1px 13px 5px;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button:hover {
@@ -55,13 +56,13 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--theme-rotate-hover-color);
+  border-bottom: 1px solid black;
   outline: none;
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--theme-rotate-hover-color);
+  outline: 1px solid var(--theme-rotate-accent-color);
 }
 
 /* Стили для главного Заголовка */
@@ -79,7 +80,7 @@
 }
 
 /* Стили для подтекста заголовка */
-.subtitle__text {
+.header__subtitle {
   font-weight: 700;
   max-width: 47.9492vw;
   align-self: flex-end;
@@ -98,6 +99,7 @@
   color: var(--accent-color);
   line-height: 138%;
   position: absolute;
+  top: 20px;
   right: 31px;
   display: flex;
   align-items: center;
@@ -160,8 +162,7 @@
   font-size: var(--main-fsize);
   font-weight: 700;
   max-width: 30.76vw;
-  margin-block-end: 1.25rem;
-  grid-column: 1;
+  margin-block-end: 1.3rem;
 }
 
 /* первая секция */
@@ -181,31 +182,20 @@
 }
 
 /* вторая секция */
-
-.checkpoint-midle-columns {
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--usualy-spacing);
-}
-/* .second-title {
-  grid-column: 1;
-} */
-
-.checkpoint-article-midle {
-  grid-row: 2;
+.checkpoint-midle-columns-article-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--usualy-spacing);
 }
 
 /* третья секция */
 .no-bold-weight {
   font-weight: 400;
 }
+
 .different-space {
   gap: 10px;
 }
-
-/* .checkpoint-article {
-  display: flex;
-  flex-direction: column;
-} */
 
 .checkpoint-article-different:not(:last-child) {
   margin-block-end: 10px;
@@ -221,29 +211,36 @@
     "player book cake"
     "player street street";
 }
+
 .checkpoint-midle-columns-gallerey-image {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .content-image-gallery-item {
   width: 100%;
   height: 100%;
   object-position: center;
   object-fit: cover;
 }
+
 .sunset {
   grid-area: sea;
 }
+
 .ice-cream {
   grid-area: cake;
 }
+
 .player {
   grid-area: player;
 }
+
 .books {
   grid-area: book;
 }
+
 .street {
   grid-area: street;
 }
@@ -272,8 +269,10 @@
 }
 
 .link:focus {
+  text-decoration: none;
   outline: none;
 }
+
 .link:focus-visible {
   text-decoration: none;
   outline: 1px solid var(--link-color);
@@ -292,6 +291,10 @@
     align-items: end;
   }
 
+  .header__theme-menu-list {
+    gap: 11px;
+  }
+
   .title {
     text-shadow: 4px 4px var(--shadow-title-media);
   }
@@ -302,7 +305,7 @@
     line-height: 82.5%;
   }
 
-  .subtitle__text {
+  .header__subtitle {
     max-width: 47.3958vw;
   }
 
@@ -310,7 +313,7 @@
     flex-direction: column;
   }
 
-  .checkpoint-midle-columns {
+  .checkpoint-midle-columns-article-content {
     display: flex;
     flex-direction: column;
   }
@@ -338,6 +341,10 @@
   .header {
     height: 100%;
     margin-block-end: 6.1vh;
+  }
+
+  .rec__type-icon {
+    top: 11px;
   }
 
   .decorated-zone {
@@ -372,7 +379,7 @@
     line-height: 82.5%;
   }
 
-  .subtitle__text {
+  .header__subtitle {
     max-width: 100%;
   }
 
@@ -401,7 +408,6 @@
   }
 
   .footer {
-    /* margin-block-start: 42px; */
     height: max(100vh, 668px);
   }
 

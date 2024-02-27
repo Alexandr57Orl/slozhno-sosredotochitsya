@@ -5,6 +5,7 @@
 */
 
 .page.theme_dark {
+  --title-color: #000028;
   --text-color: #f1b2ce;
   --main-title-color: rgb(219, 0, 255);
   --bg-color: #000028;
