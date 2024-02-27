@@ -54,7 +54,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--theme-rotate-accent-color);
   outline: none;
 }
 
