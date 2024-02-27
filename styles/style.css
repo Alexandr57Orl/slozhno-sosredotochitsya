@@ -42,9 +42,7 @@
 }
 
 .header__theme-menu-button {
-  position: relative;
   background: transparent;
-  border: none;
   height: 26px;
   padding: 1px 13px 5px;
   border: 1px solid transparent;
@@ -293,6 +291,7 @@
 
   .header__theme-menu-list {
     gap: 11px;
+    flex-direction: column;
   }
 
   .title {
@@ -309,17 +308,9 @@
     max-width: 47.3958vw;
   }
 
-  .header__theme-menu-list {
-    flex-direction: column;
-  }
-
   .checkpoint-midle-columns-article-content {
     display: flex;
     flex-direction: column;
-  }
-
-  .checkpoint-article-midle:not(:last-child) {
-    margin-block-end: var(--usualy-spacing);
   }
 
   .checkpoint-high-columns {
@@ -343,15 +334,12 @@
     margin-block-end: 6.1vh;
   }
 
-  .rec__type-icon {
-    top: 11px;
-  }
-
   .decorated-zone {
     padding: 10px 10px 8.3vh 10px;
   }
 
   .rec__type-icon {
+    top: 11px;
     right: 20px;
   }
 
